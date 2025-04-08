@@ -1,3 +1,20 @@
+# Pour lancer ce projet avec docker
+
+Depuis le répertoire `/app`
+Effectuer la commande : `docker build -t mern-frontend .`
+
+Depuis le répertoire `/back`
+Effectuer la commande : `docker build -t mern-backend .`
+
+Création du réseau : `docker network create mern-network`
+
+Effectuer ensuite les commandes suivantes :
+- Création du container front : `docker run -d --name frontend --network mern-network -p8080:80 mern-frontend`
+- Création du container mongodb : `docker run -d --name mongodb --network mern-network -v mongodb_data:/data/db mongo:latest`
+- Création du container backend : `docker run -d --name backend --network mern-network mern-backend`
+
+---
+
 # Projet Hackathon : Application de Réseau Social avec Reconnaissance des Expressions Faciales
 
 ## Présentation du Projet
