@@ -1,0 +1,79 @@
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 5%;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.sectionUser {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.listUser {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+    flex-shrink: 0;
+    width: calc(50% - 7.5px);
+  }
+}
+
+.noResults {
+  color: gray;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  list-style: none;
+}
+
+.tweetImage {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-top: 10px;
+}

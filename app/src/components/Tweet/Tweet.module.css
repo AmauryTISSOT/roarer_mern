@@ -1,0 +1,139 @@
+:root {
+    --avatar-width: 48px;
+}
+
+.tweetContainer {
+    width: 100%;
+    padding: 40px;
+    margin: 10px auto;
+    color: white;
+    transition: background-color 0.2s;
+    border-top: 1px solid #38444d;
+}
+
+.tweetHeader {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.avatar {
+    width: var(--avatar-width);
+    height: var(--avatar-width);
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+}
+
+.contentContainer {
+    padding: 0 calc(var(--avatar-width) + 32px);
+}
+
+.tweetImage {
+    width: 100%;
+    max-height: 600px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    object-fit: cover;
+}
+
+.userInfo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.userName {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+.userHandle {
+    color: #536471;
+    font-size: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.twitterIcon {
+    width: 20px;
+    height: 20px;
+    fill: #1d9bf0;
+}
+
+.tweetText {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3125;
+    margin-bottom: 12px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+.tweetTimestamp {
+    color: #536471;
+    font-size: 20px;
+}
+
+.tweetActions {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding: 0 calc(var(--avatar-width) + 32px);
+}
+
+.actionItem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #536471;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.actionIcon {
+    width: 18px;
+    height: 18px;
+    fill: #536471;
+    margin-right: 8px;
+}
+
+.actionCount {
+    font-size: 13px;
+}
+
+.actionItem:hover .actionIcon {
+    fill: #1d9bf0;
+}
+
+.actionItem:hover {
+    color: #1d9bf0;
+}
+
+.actionItem:nth-child(2):hover .actionIcon {
+    fill: #00ba7c;
+}
+
+.actionItem:nth-child(2):hover {
+    color: #00ba7c;
+}
+
+.actionItem:nth-child(3):hover .actionIcon {
+    fill: #f91880;
+}
+
+.actionItem:nth-child(3):hover {
+    color: #f91880;
+}

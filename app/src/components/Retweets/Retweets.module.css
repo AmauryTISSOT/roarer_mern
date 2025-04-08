@@ -1,0 +1,102 @@
+:root {
+  --avatar-size: 48px;
+}
+
+.container {
+  width: 100%;
+
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.retweetCard {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #b2aaee; /* Bordure bleue pour différencier les retweets */
+  transition: background 0.2s;
+}
+
+.retweetCard:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+}
+
+.userId {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.retweetContent {
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.retweetContent {
+  border-left: 4px solid #aa82ab; /* Marqueur retweet */
+}
+
+.quoteContent {
+  border-left: 4px solid #aa82ab; /* Marqueur citation */
+}
+
+.quoteContent p:first-child {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.originalTweet {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #cccccc;
+}
+
+.text {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.noRetweets {
+  text-align: center;
+  color: #cdcdcd;
+  font-style: italic;
+  font-size: 16px;
+}

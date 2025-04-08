@@ -1,0 +1,7 @@
+mlflow
+flask
+pandas
+seaborn
+tensorflow
+keras
+opencv-python-headless

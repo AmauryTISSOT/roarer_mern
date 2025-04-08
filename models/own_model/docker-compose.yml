@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  mlflow:
+    build: .
+    container_name: mlflow_server
+    volumes:
+      - ./emotion.db:/app/emotion.db
+      - ./mlruns:/app/mlruns
+    ports:
+      - "5000:5000"

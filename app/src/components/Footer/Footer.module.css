@@ -1,0 +1,43 @@
+.footer {
+    min-width: 20%;
+    background-color: #111;
+    height: 100vh;
+    padding-top: 20px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    border-left: 1px solid #706d6d;
+    color: white;
+}
+
+.section {
+    margin-bottom: 30px;
+    border: 0.5px solid rgb(98, 97, 99);
+    border-radius: 15px;
+    text-align: left;
+    padding: 3%;
+}
+
+.section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section li {
+    margin: 10px 0;
+}
+
+.compte {
+    margin: 5%;
+    font-size: small;
+}
+
+.boutonLogoutContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

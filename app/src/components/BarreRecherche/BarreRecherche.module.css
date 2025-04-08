@@ -1,0 +1,20 @@
+.recherche {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.inputRecherche {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.inputRecherche:focus {
+  border-color: #b2aaee;
+}

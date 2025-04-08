@@ -1,0 +1,66 @@
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 40px;
+  border-radius: 50%;
+}
+
+.boutonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  min-width: 20%;
+  background-color: #111;
+  padding-top: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #706d6d;
+  color: white;
+}
+
+.topSection {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.bottomSection {
+  margin-top: auto;
+  background-color: rgb(131, 136, 134);
+  height: 250px;
+}
+
+.boutonRond {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  width: 80%;
+  text-align: left;
+  margin-left: 0%;
+}
+
+.boutonRond:hover {
+  background-color: #5c5959;
+  transform: scale(1.05);
+}
+
+.boutonRond:active {
+  background-color: #333;
+  transform: scale(0.95);
+}

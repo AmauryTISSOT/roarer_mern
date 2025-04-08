@@ -1,0 +1,48 @@
+.profilePreview {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  background-color: #414141;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profilePicture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.userInfo {
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.username {
+  color: #b2aaee;
+}
+
+.bio {
+  font-size: 14px;
+  color: #bababa;
+  margin-bottom: 15px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #b2aaee;
+}
+
+.joined {
+  font-size: 12px;
+  color: #777;
+}

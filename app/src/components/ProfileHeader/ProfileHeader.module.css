@@ -1,0 +1,93 @@
+:root {
+  --component-width: 100%;
+  --component-height: 60%;
+  --profile-picture-width: 100px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: var(--component-width);
+  height: var(--component-height);
+  position: relative;
+  gap: 35px;
+}
+
+.profilePicture {
+  border-radius: 50%;
+  width: var(--profile-picture-width);
+  border: 2px solid blue;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: 0;
+  margin-left: 10px;
+  object-fit: cover;
+}
+
+.followButton {
+  position: absolute;
+  top: calc(50% - 36px);
+  right: 0;
+  margin-right: 10px;
+  border: 1px solid rgb(113, 118, 123);
+  background-color: transparent;
+  min-width: 104px;
+  border-radius: 20px;
+}
+
+.followButton:hover {
+  background-color: rgb(113, 118, 123);
+  color: white;
+}
+
+.banner {
+  width: 100%;
+  height: calc(var(--component-height) / 2);
+  object-fit: cover;
+}
+
+.profileInfo {
+  flex: 1;
+  height: 50%;
+  margin: calc(var(--profile-picture-width) / 3) 0;
+  padding: 0 var(--avatar-width);
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: start;
+  justify-content: flex-start;
+}
+
+.profileInfo * {
+  padding: 0;
+  margin: 1px 0;
+}
+
+.bioContainer {
+  font-weight: bold;
+  text-align: left;
+}
+
+.name {
+  color: rgb(113, 118, 123);
+  font-weight: 500;
+}
+
+.joinedContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: rgb(113, 118, 123);
+  font-weight: 500;
+}
+
+.followInfo {
+  display: flex;
+  gap: 10px;
+}
+
+.followContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

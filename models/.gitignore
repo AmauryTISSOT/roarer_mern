@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+react_app/
+own_model/datas/
+archive/
+react_app/
