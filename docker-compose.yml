@@ -1,0 +1,44 @@
+services:
+    frontend:
+        build:
+            context: ./app
+            dockerfile: Dockerfile
+        image: mern-frontend
+        container_name: frontend
+        ports:
+            - "8080:80"
+        networks:
+            - mern-network
+        depends_on:
+            - backend
+
+    backend:
+        build:
+            context: ./back
+            dockerfile: Dockerfile
+        image: mern-backend
+        container_name: backend
+        ports:
+            - "5000:5000"
+        networks:
+            - mern-network
+        depends_on:
+            - mongodb
+
+    mongodb:
+        image: mongo:latest
+        container_name: mongodb
+        volumes:
+            - mongodb_data:/data/db
+        networks:
+            - mern-network
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: admin
+            MONGO_INITDB_ROOT_PASSWORD: eQSda483zjdoizazao121hnjoiaz2
+
+volumes:
+    mongodb_data:
+
+networks:
+    mern-network:
+        driver: bridge

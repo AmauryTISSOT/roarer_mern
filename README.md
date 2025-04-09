@@ -1,4 +1,8 @@
-# Pour lancer ce projet avec docker
+# Pour lancer le projet avec docker compose
+
+`docker compose up --build -d`
+
+# Pour lancer ce projet avec docker les dockerfiles
 
 Depuis le répertoire `/app`
 Effectuer la commande : `docker build -t mern-frontend .`
@@ -9,9 +13,10 @@ Effectuer la commande : `docker build -t mern-backend .`
 Création du réseau : `docker network create mern-network`
 
 Effectuer ensuite les commandes suivantes :
-- Création du container front : `docker run -d --name frontend --network mern-network -p8080:80 mern-frontend`
-- Création du container mongodb : `docker run -d --name mongodb --network mern-network -v mongodb_data:/data/db mongo:latest`
-- Création du container backend : `docker run -d --name backend --network mern-network mern-backend`
+
+-   Création du container front : `docker run -d --name frontend --network mern-network -p8080:80 mern-frontend`
+-   Création du container mongodb : `docker run -d --name mongodb --network mern-network -v mongodb_data:/data/db mongo:latest`
+-   Création du container backend : `docker run -d --name backend --network mern-network mern-backend`
 
 ---
 
@@ -23,10 +28,10 @@ Ce projet a été réalisé dans le cadre d'un hackathon avec pour objectif de c
 
 ## Objectifs
 
-- Développer une application de réseau social complète avec des fonctionnalités de publication et d'interaction avec les tweets.
-- Intégrer une IA capable de reconnaître les expressions faciales en temps réel.
-- Offrir une interface utilisateur intuitive et ergonomique.
-- Assurer la performance et la scalabilité de l'application.
+-   Développer une application de réseau social complète avec des fonctionnalités de publication et d'interaction avec les tweets.
+-   Intégrer une IA capable de reconnaître les expressions faciales en temps réel.
+-   Offrir une interface utilisateur intuitive et ergonomique.
+-   Assurer la performance et la scalabilité de l'application.
 
 ## Structure du Projet
 
@@ -49,20 +54,20 @@ Ce dossier regroupe les différents modèles utilisés dans l'application, notam
 Pour lancer l'application en local, suivez les étapes ci-dessous :
 
 1. **Frontend (`app/`)** :
-   - Naviguez dans le dossier `app/`.
-   - Installez les dépendances avec `npm install`.
-   - Lancez l'application avec `npm run dev`.
+
+    - Naviguez dans le dossier `app/`.
+    - Installez les dépendances avec `npm install`.
+    - Lancez l'application avec `npm run dev`.
 
 2. **Backend (`back/`)** :
-   - Naviguez dans le dossier `back/`.
-   - Installez les dépendances avec `npm install`.
-   - Lancez le serveur avec `npm start`.
+
+    - Naviguez dans le dossier `back/`.
+    - Installez les dépendances avec `npm install`.
+    - Lancez le serveur avec `npm start`.
 
 3. **Modèles (`models/`)** :
-   - Assurez-vous que les modèles d'IA sont correctement configurés et chargés dans l'application en suivant les instructions de chaque micro-service des modèles.
+    - Assurez-vous que les modèles d'IA sont correctement configurés et chargés dans l'application en suivant les instructions de chaque micro-service des modèles.
 
 ## Conclusion
 
 Ce projet a été une opportunité d'explorer le développement d'une application de réseau social enrichie par l'intelligence artificielle. Nous espérons que vous apprécierez l'utilisation de l'application et ses fonctionnalités innovantes.
-
-
