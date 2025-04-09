@@ -2,7 +2,7 @@
 
 `docker compose up --build -d`
 
-# Pour lancer ce projet avec docker les dockerfiles
+# Pour lancer ce projet avec dockerfiles
 
 Depuis le répertoire `/app`
 Effectuer la commande : `docker build -t mern-frontend .`
